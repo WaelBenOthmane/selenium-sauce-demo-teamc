@@ -1,12 +1,15 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.Test;
 
 import java.net.URL;
 
 public class GoogleTest {
 
-    public static void main(String[] args) throws Exception {
+
+    @Test
+    public static void openGoogle() throws Exception {
 
         String username = System.getenv("SAUCE_USERNAME");
         String accessKey = System.getenv("SAUCE_ACCESS_KEY");
