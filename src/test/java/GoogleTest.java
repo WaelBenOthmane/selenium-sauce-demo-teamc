@@ -28,6 +28,7 @@ public class GoogleTest {
         Thread.sleep(5000);
         System.out.println("Title of the page is: " + driver.getTitle());
         System.out.println("Test SauceLabs");
+        System.out.println("Test Job Overview");
 
         driver.quit();
 
