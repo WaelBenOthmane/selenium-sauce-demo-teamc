@@ -19,8 +19,10 @@ public class GoogleTest {
 
         MutableCapabilities caps = new MutableCapabilities();
         caps.setCapability("browserName", browser);
-        caps.setCapability("browserVersion", "lastest");
+        caps.setCapability("browserVersion", "latest");
         caps.setCapability("platformName", "Windows 11");
+        caps.setCapability("name", "Google Test");
+        caps.setCapability("build", "TeamCity Build");
 
         WebDriver driver = new RemoteWebDriver(
                 new URL("https://" + username + ":" + accessKey +
